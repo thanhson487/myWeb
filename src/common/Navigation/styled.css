@@ -155,15 +155,19 @@ button {
     }
 }
 @media screen and (max-width: 1023px) {
+    .menu-link:hover {
+        color: #8bb8c1;
+    }
     .menu {
         position: absolute;
         right: 0;
         top: 100%;
         min-width: 20rem;
-        background-color: white;
+        background-color: #151515;
         box-shadow: var(--shadow);
         flex-direction: column;
         display: none;
+        border-radius: 10px;
         z-index: 100;
     }
     .menu.show,
@@ -181,10 +185,8 @@ button {
     }
     .menu-child {
         display: none;
-        background-color: #f6f6f6;
     }
     .menu-child1 {
-        background-color: #eee;
     }
     .menu-toggle {
         width: max-content;
