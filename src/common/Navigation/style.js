@@ -1,5 +1,5 @@
+import { Navbar } from "react-bootstrap";
 import styled from "styled-components";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 export const CustomNavbar = styled(Navbar)`
   position: absolute;
   width: 100%;
@@ -19,22 +19,24 @@ export const CustomUl = styled.ul`
   display: flex;
   flex-direction: row;
   margin-bottom: 0px;
-
   li {
     font-size: 14px;
     padding-left: 20px;
-    color: white;
-    &:nth-of-type(1):hover {
-      color: #0C88EF;
+    color: #ffffff!important;
+    &:checked{
+      color: #ffffff!important;
     }
-    &:nth-of-type(2):hover {
-      color: orange;
+    a{
+      color: #ffffff!important;
+    &:checked{
+      color: #ffffff!important;
     }
-    &:nth-of-type(3):hover {
-      color: green;
-    }
-    &:nth-of-type(4):hover {
-      color: red;
     }
   }
 `;
+export const CustomShowMenu = styled.div`
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+`

@@ -1,16 +1,17 @@
-import React, { useMemo } from "react";
-import img1 from "./../../../img/slideshow/img1.jpg";
-import img2 from "./../../../img/slideshow/img2.jpg";
-import img3 from "./../../../img/slideshow/img3.jpg";
-import img4 from "./../../../img/slideshow/img4.jpg";
-import img5 from "./../../../img/slideshow/img5.jpg";
+import "photoswipe/dist/default-skin/default-skin.css";
+import "photoswipe/dist/photoswipe.css";
+import { useMemo } from "react";
+import { Gallery } from "react-photoswipe-gallery";
+import img1 from "./../../../../img/slideshow/img1.jpg";
+import img2 from "./../../../../img/slideshow/img2.jpg";
+import img3 from "./../../../../img/slideshow/img3.jpg";
+import img4 from "./../../../../img/slideshow/img4.jpg";
+import img5 from "./../../../../img/slideshow/img5.jpg";
+import Image from "./Image";
 import "./style.scss";
 import {
-  CustomtypoContent,
-  CustomtypoTitle,
-  CustomWrapper,
   Wrapper,
-  WrapperContent,
+  WrapperContent
 } from "./styled-album";
 
 const IMAGES = [
@@ -83,26 +84,22 @@ const IMAGES = [
   },
 ];
 
-function Album(props) {
+function Album() {
   const renderImage = useMemo(() => {
-    return IMAGES.map((item) => {
+    return IMAGES.map( (item,index) => {
       return (
-        <div className="gallery-item">
-          <img src={item.src} style = {{borderRadius: "5px"}}></img>
-          <CustomWrapper>
-            <CustomtypoTitle variant="h2">Black-Wlide</CustomtypoTitle>
-            <CustomtypoContent variant="body1">People</CustomtypoContent>
-          </CustomWrapper>
-        </div>
+      <Image key = {index} item = {item}/>
       );
     });
   }, []);
   return (
-    <Wrapper>
-      <WrapperContent>
-        <div className="gallery">{renderImage}</div>
-      </WrapperContent>
-    </Wrapper>
+    <Gallery  shareButton={false} allowFullScreen = {true}>
+      <Wrapper>
+        <WrapperContent>
+          <div className="gallery">{renderImage}</div>
+        </WrapperContent>
+      </Wrapper>
+    </Gallery>
   );
 }
 
