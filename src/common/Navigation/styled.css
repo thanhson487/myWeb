@@ -64,18 +64,17 @@ button {
 
 .menu {
     display: flex;
-    margin-bottom: 0px;
 }
 .menu-link {
     font-size: 1.4rem;
-    color: #fff;
+    color: rgb(68, 68, 79);
     display: block;
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }
 .menu-link:hover {
-    color: #202842;
+    color: rgb(255, 149, 0);
 }
 .menu-item {
     position: relative;
@@ -90,24 +89,33 @@ button {
 }
 .menu-child-item {
     position: relative;
+    padding-left: 0px !important;
 }
 .menu-child-link:hover {
     color: #202842;
+    background-color: #f4f7fb;
+    border-radius: 10px;
 }
 
 .menu-toggle {
     display: none;
 }
 .nav {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-
-    position: absolute;
-    padding: 10px;
+    position: fixed;
     z-index: 10000;
+    background-color: #fff;
+    padding: 2px;
+}
+.img-logo {
+    width: 150px;
+    margin-left: 20px;
+}
+.img-logo:hover {
 }
 .arrow-right {
     display: none;
@@ -128,9 +136,11 @@ button {
         left: 0;
         margin-top: 1rem;
         min-width: 20rem;
-        background-color: white;
+        background-color: #fff;
         box-shadow: var(--shadow);
         display: none;
+        border-radius: 10px;
+        padding-left: 0px !important;
     }
     .menu-child:before {
         content: "";
@@ -156,14 +166,14 @@ button {
 }
 @media screen and (max-width: 1023px) {
     .menu-link:hover {
-        color: #8bb8c1;
+        color: rgb(255, 149, 0);
     }
     .menu {
         position: absolute;
         right: 0;
         top: 100%;
         min-width: 20rem;
-        background-color: #151515;
+        background-color: #fff;
         box-shadow: var(--shadow);
         flex-direction: column;
         display: none;
@@ -194,5 +204,7 @@ button {
         display: block;
         margin-left: auto;
         cursor: pointer;
+        color: rgb(0, 0, 0);
+        margin-right: 10px;
     }
 }

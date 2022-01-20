@@ -15,8 +15,9 @@ const Footer = () => {
         <WrapperCol>
           <ColTitle>Về chúng tôi</ColTitle>
           <ColContent>
-           Với hơn 7 năm kinh nghiệm trong lĩnh vực chụp ảnh, quay phim trong lĩnh vực phóng sự cưới, sự kiện, teambulding. Chúng tôi cam kết sẽ đem đến cho 
-           quý khách hàng những sản phẩm tốt nhất đáp ứng với nhu cầu của quý khách.
+            CAM PRODUCTION – Capture your best memories!
+            <br />
+            Với hơn 7 năm kinh nghiệm trong lĩnh vực quay phim chụp ảnh, quay phim, CAM PRODUCTION cam kết mang đến cho quý khách hàng dịch vụ chuyên nghiệp và những bức ảnh chân thực nhất!
           </ColContent>
         </WrapperCol>
 
@@ -36,7 +37,7 @@ const Footer = () => {
             src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FThanhsonphotographer&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=252322239528281"
             width="340"
             height="100"
-            style={{border:"none",overflow:"hidden"}}
+            style={{ border: "none", overflow: "hidden" }}
             scrolling="no"
             frameborder="0"
             allowfullscreen="true"

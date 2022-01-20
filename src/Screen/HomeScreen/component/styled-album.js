@@ -32,6 +32,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 `;
 export const WrapperContent = styled.div`
   width: 80%;
@@ -46,8 +47,7 @@ export const Overlay = styled.div`
   left: 0;
   position: absolute;
 `;
-export const CustomImage = styled.img`
-`;
+export const CustomImage = styled.img``;
 export const WrapperImage = styled.div`
   position: relative;
   overflow: hidden;
@@ -57,7 +57,7 @@ export const WrapperImage = styled.div`
       z-index: 99;
       transition: all 0.5s ease;
     }
-    ${CustomImage}{
+    ${CustomImage} {
       transform: scale(1.1);
       transition: all 0.5s ease;
     }

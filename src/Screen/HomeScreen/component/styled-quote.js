@@ -11,6 +11,7 @@ export const WrapperContent = styled.div`
   align-items: center;
 `;
 export const Container = styled.div`
+width: 100%;
   position: relative;
   background-image: url(https://matchthemes.com/demowp/gleam/wp-content/uploads/blog-9.jpg);
   background-position: center center;

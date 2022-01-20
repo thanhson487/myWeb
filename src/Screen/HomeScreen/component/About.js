@@ -3,15 +3,11 @@ function About(props) {
   return (
     <div className="wrapper">
       <div className="about">
-        <h2 className = "about__content">
-          We're Gleam a small and enthusiastic photography studio based in New
-          York
+        <h2 className="about__content">
+        Đừng để những khoảnh khắc tuyệt vời bị lãng quên
         </h2>
-        <p className = "about__dr">
-          We love photography and travel for meeting new beautiful people all
-          over the world. Propriae voluptaria dissentias nam ei, posse diceret
-          inciderint cum ut, gubergren sadipscing ei vim. Ancillae torquatos in
-          nec, impetus nostrum ea eos.
+        <p className="about__dr">
+          Hãy lưu giữ kỷ niệm trong những bức hình!
         </p>
       </div>
     </div>

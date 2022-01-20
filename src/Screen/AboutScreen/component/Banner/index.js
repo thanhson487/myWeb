@@ -4,7 +4,7 @@ function Banner(props) {
   return (
     <Wrapper>
       <WrapperContent>
-        <Content>About Us</Content>
+        <Content>Về chúng tôi</Content>
         <ContentDr>WE PLAY WITH LIGHT</ContentDr>
       </WrapperContent>
     </Wrapper>

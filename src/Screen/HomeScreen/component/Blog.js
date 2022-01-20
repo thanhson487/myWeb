@@ -23,7 +23,7 @@ function Blog(props) {
     <>
       <Wrapper>
         <WrapperContent>
-          <Title>Read Our Blog</Title>
+          <Title>Bạn muốn chụp gì?</Title>
         </WrapperContent>
       </Wrapper>
       <Wrapper>
@@ -36,19 +36,17 @@ function Blog(props) {
               </WrapperImage>
               <WrapperDr>
                 <TitleDr>Phóng sự cưới</TitleDr>
-                <div style={{ display: "flex", marginBottom: "15px" }}>
+                {/* <div style={{ display: "flex", marginBottom: "15px" }}>
                   <TitleDr2>MARCH 10</TitleDr2>
                   <CustomItem
                     className="fas fa-wifi-1"
                     style={{ color: "#8bb8c1" }}
                   />
                   <TitleDr2> 2021 NEWS PORTRAITS</TitleDr2>
-                </div>
+                </div> */}
                 <WrapperContent2>
                   <CustomContent>
-                    Arnare varius mauris eu commodo. Aenean nibh risus, rhoncus
-                    eget consectetur ac. Consectetur adipiscing elit. Vivamus
-                    auctor condimentum sem et ..
+                  Hạnh phúc trong ngày trọng đại nhất đời mình 
                   </CustomContent>
                 </WrapperContent2>
               </WrapperDr>
@@ -62,19 +60,17 @@ function Blog(props) {
 
               <WrapperDr>
                 <TitleDr>Sự kiện</TitleDr>
-                <div style={{ display: "flex", marginBottom: "15px" }}>
+                {/* <div style={{ display: "flex", marginBottom: "15px" }}>
                   <TitleDr2>MARCH 10</TitleDr2>
                   <CustomItem
                     className="fas fa-wifi-1"
                     style={{ color: "#8bb8c1" }}
                   />
                   <TitleDr2> 2021 NEWS PORTRAITS</TitleDr2>
-                </div>
+                </div> */}
                 <WrapperContent2>
                   <CustomContent>
-                    Arnare varius mauris eu commodo. Aenean nibh risus, rhoncus
-                    eget consectetur ac. Consectetur adipiscing elit. Vivamus
-                    auctor condimentum sem et ..
+                  Ánh sáng, âm nhạc và những bức hình không thể thiếu cho các sự kiện hoành tráng
                   </CustomContent>
                 </WrapperContent2>
               </WrapperDr>
@@ -87,19 +83,17 @@ function Blog(props) {
               </WrapperImage>
               <WrapperDr>
                 <TitleDr>Concept</TitleDr>
-                <div style={{ display: "flex", marginBottom: "15px" }}>
+                {/* <div style={{ display: "flex", marginBottom: "15px" }}>
                   <TitleDr2>MARCH 10</TitleDr2>
                   <CustomItem
                     className="fas fa-wifi-1"
                     style={{ color: "#8bb8c1" }}
                   />
                   <TitleDr2> 2021 NEWS PORTRAITS</TitleDr2>
-                </div>
+                </div> */}
                 <WrapperContent2>
                   <CustomContent>
-                    Arnare varius mauris eu commodo. Aenean nibh risus, rhoncus
-                    eget consectetur ac. Consectetur adipiscing elit. Vivamus
-                    auctor condimentum sem et ..
+                  Một thời hồn nhiên, mơ mộng, vu vơ… nào có lần thứ hai?
                   </CustomContent>
                 </WrapperContent2>
               </WrapperDr>

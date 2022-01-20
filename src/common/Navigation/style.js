@@ -18,19 +18,19 @@ export const CustomToggle = styled(Navbar.Toggle)`
 export const CustomUl = styled.ul`
   display: flex;
   flex-direction: row;
-  margin-bottom: 0px;
+ 
   li {
     font-size: 14px;
     padding-left: 20px;
-    color: #ffffff!important;
-    &:checked{
-      color: #ffffff!important;
+    color: rgb(36, 36, 38) !important;
+    &:checked {
+      color: rgb(36, 36, 38) !important;
     }
-    a{
-      color: #ffffff!important;
-    &:checked{
-      color: #ffffff!important;
-    }
+    a {
+      color: rgb(36, 36, 38) !important;
+      &:checked {
+        color: rgb(36, 36, 38) !important;
+      }
     }
   }
 `;
@@ -39,4 +39,5 @@ export const CustomShowMenu = styled.div`
   height: 100vh;
   position: absolute;
   z-index: 0;
-`
+ 
+`;

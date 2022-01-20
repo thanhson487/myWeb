@@ -8,7 +8,7 @@ function AboutScreen(props) {
     <div>
       <Banner />
       <Description />
-      <Skill />
+   
       <Quote />
     </div>
   );

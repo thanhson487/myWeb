@@ -14,11 +14,9 @@ function Quote(props) {
           <OverLay />
           <WrapperQuote>
             <QuoteTitle class="elementor-heading-title elementor-size-default">
-              " The creativity and talent of the Gleam team was amazing. Pro in
-              hinc exerci gloriatur, ius ut agam consectetuer, quo te euismod
-              corrumpit. "
+              "Chỉ có những kỷ niệm là mãi không phai mờ."
             </QuoteTitle>
-            <Author>Anna Jones - Bride</Author>
+            <Author>Thanh Sơn - Photographer</Author>
           </WrapperQuote>
         </Container>
       </WrapperContent>

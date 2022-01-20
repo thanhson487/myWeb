@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { CustomUl, CustomShowMenu } from "./style.js";
+import { useLocation } from "react-router-dom";
 import "./styled.css";
+import logo from "./logo.png";
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
   return {
@@ -41,32 +43,52 @@ function Navigation() {
   useEffect(() => {
     const { width } = windowDimensions;
     console.log(width);
+
     if (width <= 551) {
       setShowIcon(false);
     }
-    if(width>1022&&width<1144){
-      setShowIcon(false)
+    if (width < 1144) {
+      setShowIcon(false);
     }
-    if(width>=1144){
-      setShowIcon(true)
+    if (width >= 1144) {
+      setShowIcon(true);
     }
   }, [windowDimensions]);
+  const location = useLocation();
+  useEffect(() => {
+    setMenuMobile(false);
+  }, [location.pathname]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const onClickOutside = () => {
+    setMenuMobile(false);
+  };
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        onClickOutside && onClickOutside();
+      }
+    };
+    document.addEventListener("click", handleClickOutside, true);
+    return () => {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  }, [onClickOutside]);
+
   return (
     <>
-      <CustomShowMenu
-        className="test123"
-        onClick={() => setMenuMobile(false)}
-      ></CustomShowMenu>
+      <CustomShowMenu onClick={() => setMenuMobile(false)}></CustomShowMenu>
       <div className="wrapper">
         <nav className="nav">
           <Link to="/" className="logo" style={{ cursor: "pointer" }}>
-            Thanhson Productions
+            <img src={logo} className="img-logo" alt="logo" />
           </Link>
           <i
             className="fal fa-bars menu-toggle"
             onClick={() => setMenuMobile(!menuMobile)}
           />
-          <ul className={menuMobile === true ? "menu show" : "menu"}>
+          <ul className={menuMobile === true ? "menu show" : "menu "} ref={ref}>
             <li className="menu-item ">
               <Link to="/" className="menu-link">
                 Trang chủ
@@ -93,7 +115,7 @@ function Navigation() {
                 </li>
                 <li className="menu-child-item">
                   <a href="#" className="menu-child-link">
-                    Kỉ yếu
+                    Concept
                   </a>
                 </li>
               </ul>
@@ -107,7 +129,7 @@ function Navigation() {
                 />
               </a>
               <ul className="menu-child ">
-                <li className="menu-child-item has-child">
+                <li className="menu-child-item ">
                   <a href="#" className="menu-child-link">
                     Phóng sự cưới
                   </a>
@@ -119,7 +141,7 @@ function Navigation() {
                 </li>
                 <li className="menu-child-item">
                   <a href="#" className="menu-child-link">
-                    Kỉ yếu
+                    Concept
                   </a>
                 </li>
               </ul>
@@ -135,32 +157,31 @@ function Navigation() {
               </Link>
             </li>
           </ul>
-         {showIcon&&<CustomUl>
-            <li>
-              <a
-                href="http://www.facebook.com/thanhsonitptit"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="fab fa-facebook-f" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/son.camcam/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <i className="fab fa-instagram" />
-              </a>
-            </li>
-            <li>
-              <i className="fab fa-flickr" />
-            </li>
-            <li>
-              <i className="fab fa-youtube" />
-            </li>
-          </CustomUl>} 
+          {showIcon && (
+            <CustomUl>
+              <li>
+                <a
+                  href="http://www.facebook.com/thanhsonitptit"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fab fa-facebook-f" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/son.camcam/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <i className="fab fa-instagram" />
+                </a>
+              </li>
+              <li>
+                <i className="fab fa-youtube" />
+              </li>
+            </CustomUl>
+          )}
         </nav>
       </div>
     </>

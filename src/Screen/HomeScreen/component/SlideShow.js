@@ -12,19 +12,14 @@ const fadeImages = [img1, img2, img3, img4, img5];
 function SlideShow() {
   return (
     <div className="slide-container">
+       <BackgroundSlider images={fadeImages} duration={2} transition={1} />
       <div className="content">
-        <h1 className="content__title">Creative Photography Studio</h1>
+        <h1 className="content__title">Cam Production</h1>
         <p className="content__dr">
-          Aperiri sanctus eam ei, simul dolorum vel ex
+        Capture your best memories!
         </p>
-        <a
-          href="https://matchthemes.com/demowp/gleam/about-us/"
-          className="content__btn"
-        >
-          Xem thêm
-        </a>
       </div>
-      <BackgroundSlider images={fadeImages} duration={2} transition={1} />
+     
     </div>
   );
 }

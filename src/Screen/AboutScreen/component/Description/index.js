@@ -20,13 +20,13 @@ function Description(props) {
       <WrapperContent>
         <WrapperAbout>
           <AboutLeft>
-            <ContentLeft>Welcome to Cốm Photographer</ContentLeft>
+            <ContentLeft>Welcome to CAM PRODUCTION</ContentLeft>
             <ContentLeftDr>
-              Lorem ipsum dolor sit amet, pro ei justo mnesarchum, ad partem
-              epicurei quo, iusto errem no cum. Idque minim his ut. Ut cum
-              legendos similique, quo an tantas aliquip graecis. Nec et consul
-              voluptatum, mel ex solum facete consequat. Cu eos lucilius
-              gubergren, ad sale definitionem his.
+              <b>CAM PRODUCTION</b> gồm những thợ ảnh chuyên nghiệp và tận tâm
+              nhất mà bạn từng biết đến. Chúng tôi yêu nghệ thuật, yêu những bức
+              ảnh và thước phim.
+              <br /> <b>CAM PRODUCTION</b> mong muốn lưu giữ giúp bạn những phút
+              giây đáng nhớ của cuộc đời!
             </ContentLeftDr>
           </AboutLeft>
           <AboutRight>
@@ -38,34 +38,22 @@ function Description(props) {
             <CustomIcon>
               <i class="fa fa-camera-retro" aria-hidden="true"></i>
             </CustomIcon>
-            <SkillTitile>Photography</SkillTitile>
-            <SkillDr>
-              onstituto percipitur ius, cu platonem mnesarchum nam. Nostrum
-              vituperatoribus mea et, eu duo autem adipisci rationibus, eu nec
-              assum aeterno omnesque.
-            </SkillDr>
+            <SkillTitile>Chụp ảnh</SkillTitile>
+            <SkillDr>Lưu lại khoảnh khắc đáng nhớ</SkillDr>
           </WrapperSkill>
           <WrapperSkill>
             <CustomIcon>
-            <i aria-hidden="true" class="fas fa-video"></i>
+              <i aria-hidden="true" class="fas fa-video"></i>
             </CustomIcon>
-            <SkillTitile>Video</SkillTitile>
-            <SkillDr>
-              onstituto percipitur ius, cu platonem mnesarchum nam. Nostrum
-              vituperatoribus mea et, eu duo autem adipisci rationibus, eu nec
-              assum aeterno omnesque.
-            </SkillDr>
+            <SkillTitile>Quay phim</SkillTitile>
+            <SkillDr>Ghi lại những thước phim tuyệt vời</SkillDr>
           </WrapperSkill>
           <WrapperSkill>
             <CustomIcon>
-            <i aria-hidden="true" class="fas fa-paint-brush"></i>
+              <i aria-hidden="true" class="fas fa-paint-brush"></i>
             </CustomIcon>
-            <SkillTitile>Editing</SkillTitile>
-            <SkillDr>
-              onstituto percipitur ius, cu platonem mnesarchum nam. Nostrum
-              vituperatoribus mea et, eu duo autem adipisci rationibus, eu nec
-              assum aeterno omnesque.
-            </SkillDr>
+            <SkillTitile>Chỉnh sửa ảnh, video</SkillTitile>
+            <SkillDr>Ảnh và video của bạn sẽ hấp dẫn hơn hiện tại đấy!</SkillDr>
           </WrapperSkill>
         </WrapperSkills>
       </WrapperContent>
