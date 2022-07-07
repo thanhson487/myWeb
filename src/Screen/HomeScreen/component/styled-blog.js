@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -14,20 +15,34 @@ export const Title = styled.p`
   padding: 40px 120px 40px 120px;
   font-weight: 700;
   line-height: 1.2em;
-  font-family: "Lobster", cursive;
-  font-family: "Old Standard TT", serif;
+  text-align: center;
+
   font-size: 48px;
-  @media (max-width: 767px) {
+  @media (max-width: 760px) {
     font-size: 2em;
-    padding: 50px;
+    font-weight: 700;
+    padding: 10px 15px;
+    text-align: center;
+  }
+  @media (max-width: 1024px) {
+    font-size: 2em;
+    padding: 10px 15px;
   }
 `;
 export const WrapperBlog = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: row wrap;
   @media (max-width: 991px) {
-    grid-template-columns: 1fr;
+    flex-flow: column wrap;
+  }
+`;
+export const CustomFlexItem = styled.div`
+  flex: 1 0;
+  padding: 5px;
+  @media (max-width: 991px) {
+    padding: 0px;
   }
 `;
 export const WrapperBlogContainer = styled.div`
@@ -44,7 +59,8 @@ export const Overlay = styled.div`
   position: absolute;
 `;
 export const CustomImage = styled.img`
-  height: auto;
+  object-fit: cover;
+  width: 100%;
   max-width: 100%;
   border-radius: 5px;
 `;
@@ -73,8 +89,7 @@ export const WrapperDr = styled.div`
 export const TitleDr = styled.p`
   font-weight: 700;
   line-height: 1.2em;
-  font-family: "Lobster", cursive;
-  font-family: "Old Standard TT", serif;
+
   font-size: 32px;
   &:hover {
     color: #8bb8c1;
@@ -97,4 +112,9 @@ export const CustomContent = styled.p`
 `;
 export const CustomItem = styled.i`
   color: #8bb8c1 !important;
+`;
+export const CustomLink = styled(Link)`
+  color: #000;
+  cursor: pointer;
+  display: block;
 `;

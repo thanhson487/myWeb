@@ -14,8 +14,7 @@ export const WrapperContent = styled.div`
   }
 `;
 export const Content = styled.div`
-font-size: 48px;   font-family: 'Lobster', cursive;
-font-family: 'Old Standard TT', serif;
+font-size: 48px;   
 color: #151515;
     font-weight: 700;
     line-height: 1.5;

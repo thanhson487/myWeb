@@ -40,8 +40,7 @@ export const QuoteTitle = styled.p`
   color: #ffffff;
   font-style: italic;
   line-height: 1.2em;
- font-family: 'Lobster', cursive;
-font-family: 'Old Standard TT', serif;
+
   font-weight: 700;
   text-align: center;
   font-size: 32px;
@@ -52,8 +51,7 @@ font-family: 'Old Standard TT', serif;
 export const Author = styled.p`
   color: #ffffff;
   font-weight: 700;
- font-family: 'Lobster', cursive;
-font-family: 'Old Standard TT', serif;
+
   text-transform: uppercase;
   line-height: 1.2em;
   text-align: center;

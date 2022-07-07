@@ -34,8 +34,7 @@ export const Content = styled.div`
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   line-height: 1.3em;
- font-family: 'Lobster', cursive;
-font-family: 'Old Standard TT', serif;
+
   @media (max-width: 760px) {
     font-size: 48px;
   }

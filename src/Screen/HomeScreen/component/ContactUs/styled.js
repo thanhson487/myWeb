@@ -21,8 +21,7 @@ export const WrapperContent = styled.div`
   }
 `;
 export const Content = styled.div`
- font-family: 'Lobster', cursive;
-font-family: 'Old Standard TT', serif;
+
   font-weight: 700;
   font-size: 36px;
   flex: 2;

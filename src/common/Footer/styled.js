@@ -33,8 +33,7 @@ export const WrapperCol = styled.div`
 `;
 export const ColTitle = styled.div`
   line-height: 1.5;
-  font-family: 'Lobster', cursive;
-font-family: 'Old Standard TT', serif;
+
   font-size: 28px;
   letter-spacing: 0.03em;
   margin-bottom: 24px;

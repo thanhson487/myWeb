@@ -64,8 +64,7 @@ export const CustomSpan2 = styled.span`
 export const CustomH2 = styled.h2`
   font-weight: 700 !important;
   font-size: 48px;
- font-family: 'Lobster', cursive;
-font-family: 'Old Standard TT', serif;
+
   line-height: 1.2em;
   @media (max-width: 760px) {
     font-size: 32px;

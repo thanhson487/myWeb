@@ -1,103 +1,90 @@
 import React from "react";
 import {
-  Wrapper,
-  WrapperContent,
+  CustomContent,
+  CustomImage,
+  CustomLink,
+  Overlay,
   Title,
+  TitleDr,
+  Wrapper,
   WrapperBlog,
   WrapperBlogContainer,
-  CustomImage,
-  WrapperDr,
-  TitleDr,
-  TitleDr2,
+  WrapperContent,
   WrapperContent2,
-  CustomContent,
-  CustomItem,
-  WrapperImage,
-  Overlay,
+  WrapperDr,
+  WrapperImage,CustomFlexItem
 } from "./styled-blog";
-import img1 from "./../../../img/home/backgroud-psc.jpg";
-import img2 from "./../../../img/home/backgroud-event.jpg";
+
 import img3 from "./../../../img/home/backgroud-concept.jpg";
+import img2 from "./../../../img/home/backgroud-event.jpg";
+import img1 from "./../../../img/home/backgroud-psc.jpg";
 function Blog(props) {
   return (
     <>
       <Wrapper>
         <WrapperContent>
-          <Title>Bạn muốn chụp gì?</Title>
+          <Title>Dịch vụ của Cam Production</Title>
         </WrapperContent>
       </Wrapper>
       <Wrapper>
         <WrapperBlogContainer>
           <WrapperBlog>
-            <div>
+            <CustomFlexItem>
               <WrapperImage>
                 <Overlay />
                 <CustomImage src={img1} />
               </WrapperImage>
               <WrapperDr>
                 <TitleDr>Phóng sự cưới</TitleDr>
-                {/* <div style={{ display: "flex", marginBottom: "15px" }}>
-                  <TitleDr2>MARCH 10</TitleDr2>
-                  <CustomItem
-                    className="fas fa-wifi-1"
-                    style={{ color: "#8bb8c1" }}
-                  />
-                  <TitleDr2> 2021 NEWS PORTRAITS</TitleDr2>
-                </div> */}
                 <WrapperContent2>
                   <CustomContent>
-                  Hạnh phúc trong ngày trọng đại nhất đời mình 
+                    Hạnh phúc trong ngày trọng đại nhất đời mình
                   </CustomContent>
                 </WrapperContent2>
               </WrapperDr>
-            </div>
+            </CustomFlexItem>
 
-            <div>
-              <WrapperImage>
-                <Overlay />
-                <CustomImage src={img2} />
-              </WrapperImage>
+            <CustomFlexItem>
+              <CustomLink to="/su-kien">
+                <WrapperImage>
+                  <Overlay />
+                  <CustomImage src={img2} />
+                </WrapperImage>
+              </CustomLink>
 
               <WrapperDr>
-                <TitleDr>Sự kiện</TitleDr>
-                {/* <div style={{ display: "flex", marginBottom: "15px" }}>
-                  <TitleDr2>MARCH 10</TitleDr2>
-                  <CustomItem
-                    className="fas fa-wifi-1"
-                    style={{ color: "#8bb8c1" }}
-                  />
-                  <TitleDr2> 2021 NEWS PORTRAITS</TitleDr2>
-                </div> */}
-                <WrapperContent2>
-                  <CustomContent>
-                  Ánh sáng, âm nhạc và những bức hình không thể thiếu cho các sự kiện hoành tráng
-                  </CustomContent>
-                </WrapperContent2>
-              </WrapperDr>
-            </div>
+                <CustomLink to="/su-kien">
+                  <TitleDr>Sự kiện</TitleDr>
+                </CustomLink>
 
-            <div>
-              <WrapperImage>
-                <Overlay />
-                <CustomImage src={img3} />
-              </WrapperImage>
-              <WrapperDr>
-                <TitleDr>Concept</TitleDr>
-                {/* <div style={{ display: "flex", marginBottom: "15px" }}>
-                  <TitleDr2>MARCH 10</TitleDr2>
-                  <CustomItem
-                    className="fas fa-wifi-1"
-                    style={{ color: "#8bb8c1" }}
-                  />
-                  <TitleDr2> 2021 NEWS PORTRAITS</TitleDr2>
-                </div> */}
                 <WrapperContent2>
                   <CustomContent>
-                  Một thời hồn nhiên, mơ mộng, vu vơ… nào có lần thứ hai?
+                    Ánh sáng, âm nhạc và những bức hình không thể thiếu cho các
+                    sự kiện hoành tráng
                   </CustomContent>
                 </WrapperContent2>
               </WrapperDr>
-            </div>
+            </CustomFlexItem>
+
+            <CustomFlexItem>
+              <CustomLink to="/concept">
+                <WrapperImage>
+                  <Overlay />
+                  <CustomImage src={img3} />
+                </WrapperImage>
+              </CustomLink>
+
+              <WrapperDr>
+                <CustomLink to="/concept">
+                  <TitleDr>Concept</TitleDr>
+                </CustomLink>
+                <WrapperContent2>
+                  <CustomContent>
+                    Một thời hồn nhiên, mơ mộng, vu vơ… nào có lần thứ hai?
+                  </CustomContent>
+                </WrapperContent2>
+              </WrapperDr>
+            </CustomFlexItem>
           </WrapperBlog>
         </WrapperBlogContainer>
       </Wrapper>

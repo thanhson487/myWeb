@@ -5,7 +5,7 @@ export const CustomtypoTitle = styled(Typography)`
   font-size: 24px !important;
   font-weight: 700 !important;
   letter-spacing: 0.03em !important;
-  font-family: Cormorant, sans-serif !important;
+
   margin-top: 20px !important;
 `;
 export const CustomtypoContent = styled(Typography)`

@@ -16,7 +16,7 @@
     line-height: 1.2;
     color: #fff;
     margin-bottom: 16px;
-    font-family: "Cormorant", serif;
+
     @media (max-width: 760px) {
       font-size: 40px;
       line-height: 1.2em;
@@ -48,21 +48,28 @@
   .about {
     width: 80%;
     text-align: center;
-    margin-top: 108px;
+    margin-top: 50px;
     margin-bottom: 40px;
+
     @media (max-width: 760px) {
       margin-top: 40px;
       margin-bottom: 20px;
+    }
+    @media (max-width: 1024px) {
+      margin-top: 20px;
+      margin-bottom: 10px;
     }
     &__content {
       font-weight: 700;
       color: #151515;
       font-size: 48px;
-      font-family: "Lobster", cursive;
+
       margin-bottom: 30px;
       @media (max-width: 760px) {
         font-size: 32px;
-        line-height: 1.2em;
+      }
+      @media (max-width: 1024px) {
+        font-size: 32px;
       }
     }
     &__dr {

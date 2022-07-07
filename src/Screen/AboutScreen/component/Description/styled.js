@@ -33,8 +33,7 @@ export const AboutLeft = styled.div`
 export const ContentLeft = styled.div`
   font-weight: 700;
   font-size: 48px;
- font-family: 'Lobster', cursive;
-font-family: 'Old Standard TT', serif;
+
   color: #151515;
   line-height: 1.2em;
   margin-bottom: 30px;
@@ -85,8 +84,7 @@ export const CustomIcon = styled.div`
   border-color: #8bb8c1;
 `;
 export const SkillTitile = styled.div`
- font-family: 'Lobster', cursive;
-font-family: 'Old Standard TT', serif;
+
   color: #151515;
   font-size: 24px;
   font-weight: 700;

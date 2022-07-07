@@ -33,7 +33,7 @@ export const WrapperQuote = styled.div`
 `;
 export const QuoteTitle = styled.p`
   color: #ffffff;
-  font-family: "Cormorant", Sans-serif;
+
   font-size: 24px;
   font-style: italic;
 
@@ -46,8 +46,7 @@ export const QuoteTitle = styled.p`
 export const Author = styled.p`
   color: #ffffff;
   font-weight: 700;
- font-family: 'Lobster', cursive;
-font-family: 'Old Standard TT', serif;
+
   text-transform: uppercase;
   line-height: 1.2em;
   text-align: center;

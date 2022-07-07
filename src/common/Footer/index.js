@@ -17,7 +17,9 @@ const Footer = () => {
           <ColContent>
             CAM PRODUCTION – Capture your best memories!
             <br />
-            Với hơn 7 năm kinh nghiệm trong lĩnh vực quay phim chụp ảnh, quay phim, CAM PRODUCTION cam kết mang đến cho quý khách hàng dịch vụ chuyên nghiệp và những bức ảnh chân thực nhất!
+            Với hơn 7 năm kinh nghiệm trong lĩnh vực quay phim chụp ảnh, quay
+            phim, CAM PRODUCTION cam kết mang đến cho quý khách hàng dịch vụ
+            chuyên nghiệp và những bức ảnh chân thực nhất!
           </ColContent>
         </WrapperCol>
 
@@ -33,16 +35,13 @@ const Footer = () => {
         </WrapperCol>
         <WrapperCol>
           <ColTitle>Fanpage</ColTitle>
-          <iframe
-            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FThanhsonphotographer&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=252322239528281"
-            width="340"
-            height="100"
-            style={{ border: "none", overflow: "hidden" }}
-            scrolling="no"
-            frameborder="0"
-            allowfullscreen="true"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          ></iframe>
+          <div
+            class="fb-page"
+            data-href="https://www.facebook.com/camproduction.me"
+            data-width="380"
+            data-hide-cover="false"
+            data-show-facepile="false"
+          ></div>
         </WrapperCol>
       </WrapperContent>
       <Author>2021 ©. Designed by SonPham</Author>
